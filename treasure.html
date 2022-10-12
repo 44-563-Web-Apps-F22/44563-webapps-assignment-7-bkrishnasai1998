@@ -13,61 +13,118 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
 </head>
-<body>
+  <body>
 
-<div class="container-fluid">
-  <h2>Treasure hunt by Krishna Sai</h2>
-  <p style="color:brown; background-color:lightgoldenrodyellow; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 200;">Click on the chests to search for treasure</p>
-  <p id="chests" style="color: blueviolet; background-color: bisque; font-family: 'Courier New', Courier, monospace; font-weight: 200;">Number of chests checked is zero.</p>
-  <p id="score" style="color:forestgreen; background-color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 200;">Score is unknown.</p>
-  <p id="help" style="color:gold; background-color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200;">Help report</p>
+    
+    <div class="container-fluid">
+      <h2>Treasure hunt by Krishna Sai</h2>
+      <p style="color:brown; background-color:lightgoldenrodyellow; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: 200;">Click on the chests to search for treasure</p>
+      <p id="chests" style="color: blueviolet; background-color: bisque; font-family: 'Courier New', Courier, monospace; font-weight: 200;">Number of chests checked is zero.</p>
+      <p id="score" style="color:forestgreen; background-color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 200;">Score is unknown.</p>
+      <p id="help" style="color:gold; background-color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200;">Help report</p>
 
-  <div class="container">
-    <div class="image-row d-flex justify-content-center">
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-	</div>
-</div>
-<div class="container">
-    <div class="image-row d-flex justify-content-center">
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-	</div>
-</div>
-<div class="container">
-    <div class="image-row d-flex justify-content-center">
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="help.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-</div>
-
-<div class="container">
-    <div class="image-row d-flex justify-content-center">
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
+      <div class="container">
+        <div class="image-row d-flex justify-content-center">
+        <div><img id="img-0" width=120 height=100 src="closedChest.jpg" onclick="check(0)"></div>
+        <div><img id="img-1" width=120 height=100 src="closedChest.jpg" onclick="check(1)"></div>
+        <div><img id="img-2" width=120 height=100 src="closedChest.jpg" onclick="check(2)"></div>
+        <div><img id="img-3" width=120 height=100 src="closedChest.jpg" onclick="check(3)"></div>
+        <div><img id="img-4" width=120 height=100 src="closedChest.jpg" onclick="check(4)"></div>
+      </div>
     </div>
-</div>
-<div class="container">
-    <div class="image-row d-flex justify-content-center">
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
-    <div><img  width=120 height=100 src="closedChest.jpg"></div>
+    <div class="container">
+        <div class="image-row d-flex justify-content-center">
+        <div><img id="img-5" width=120 height=100 src="closedChest.jpg" onclick="check(5)"></div>
+        <div><img id="img-6" width=120 height=100 src="closedChest.jpg" onclick="check(6)"></div>
+        <div><img id="img-7" width=120 height=100 src="closedChest.jpg" onclick="check(7)"></div>
+        <div><img id="img-8" width=120 height=100 src="closedChest.jpg" onclick="check(8)"></div>
+        <div><img id="img-9" width=120 height=100 src="closedChest.jpg" onclick="check(9)"></div>
+      </div>
     </div>
-</div>
-  
+    <div class="container">
+        <div class="image-row d-flex justify-content-center">
+        <div><img id="img-10" width=120 height=100 src="closedChest.jpg" onclick="check(10)"></div>
+        <div><img id="img-11" width=120 height=100 src="closedChest.jpg" onclick="check(11)"></div>
+        <div><img id="img-12" width=120 height=100 src="help.jpg" onclick="help()"></div>
+        <div><img id="img-13" width=120 height=100 src="closedChest.jpg" onclick="check(13)"></div>
+        <div><img id="img-14" width=120 height=100 src="closedChest.jpg" onclick="check(14)"></div>
+    </div>
 
-</body>
+    <div class="container">
+        <div class="image-row d-flex justify-content-center">
+        <div><img id="img-15" width=120 height=100 src="closedChest.jpg" onclick="check(15)"></div>
+        <div><img id="img-16" width=120 height=100 src="closedChest.jpg" onclick="check(16)"></div>
+        <div><img id="img-17" width=120 height=100 src="closedChest.jpg" onclick="check(17)"></div>
+        <div><img id="img-18" width=120 height=100 src="closedChest.jpg" onclick="check(18)"></div>
+        <div><img id="img-19" width=120 height=100 src="closedChest.jpg" onclick="check(19)"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-row d-flex justify-content-center">
+        <div><img id="img-20" width=120 height=100 src="closedChest.jpg" onclick="check(20)"></div>
+        <div><img id="img-21" width=120 height=100 src="closedChest.jpg" onclick="check(21)"></div>
+        <div><img id="img-22" width=120 height=100 src="closedChest.jpg" onclick="check(22)"></div>
+        <div><img id="img-23" width=120 height=100 src="closedChest.jpg" onclick="check(23)"></div>
+        <div><img id="img-24" width=120 height=100 src="closedChest.jpg" onclick="check(24)"></div>
+        </div>
+    </div>
+
+    <script>
+      let ids = ["img-0","img-1","img-2","img-3","img-4","img-5","img-6","img-7","img-8","img-9","img-10","img-11","img-12","img-13","img-14","img-15","img-16","img-17","img-18","img-19","img-20","img-21","img-22","img-23","img-24"];
+      let chestCount=0;
+      let score=0;
+      let lastCheck=12;
+      let treasureLocation=18;
+
+      function check(position){
+        let imgLoc= document.getElementById(ids[position]);
+        if(position==treasureLocation){
+          imgLoc.src="treasureChest.jpg";
+          
+        }
+        else{
+          imgLoc.src="openChest.jpg";
+        }
+        chestCount+=1;
+        score+=1;
+        document.getElementById("chests").innerHTML="Number of chests checked is "+chestCount+".";
+        document.getElementById("score").innerHTML="Score is "+score+".";
+        lastCheck=position;
+      }
+
+      function help(){
+        column=lastCheck%5;
+        row=lastCheck/5;
+        treasureColumn=treasureLocation%5;
+        treasureRow=treasureLocation/5;
+        score+=2;
+
+        document.getElementById("score").innerHTML="Score is "+score+".";
+        if(lastCheck==treasureLocation){
+          document.getElementById("help").innerHTML="Sorry, no help available";
+        }
+        else if(parseInt(row)==parseInt(treasureRow)){
+          if(row<treasureRow){
+            document.getElementById("help").innerHTML="right";
+          }
+          else{
+            document.getElementById("help").innerHTML="left";
+          }
+        }
+        else if(column==treasureColumn){
+          if(lastCheck<treasureLocation){
+            document.getElementById("help").innerHTML="down";
+          }
+          else{
+            document.getElementById("help").innerHTML="up";
+          }  }
+        else{
+          document.getElementById("help").innerHTML="Sorry, no help available";
+        }
+
+      }
+
+    </script>
+
+  </body>
 </html>
