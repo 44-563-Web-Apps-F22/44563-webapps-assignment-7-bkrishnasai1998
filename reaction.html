@@ -29,10 +29,11 @@
     }
 
     function startTime(){
-      for(let i=0;i<=3;i++){
+      let countDown=Math.floor(Math.random() * (10 - 2)) + 2
+      for(let i=0;i<=countDown;i++){
           setTimeout( () =>{
           document.getElementById('countdown').innerHTML = i;
-        } , (3-i)*1000);        
+        } , (countDown-i)*1000);        
       }
 
       setTimeout( () =>{
@@ -44,7 +45,7 @@
             var difference = buttonTime - myTime
             document.getElementById('target').innerHTML = "Time was "+difference
         }
-      }, 3000)
+      },countDown*1000)
 
     }
 

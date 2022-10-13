@@ -22,6 +22,8 @@
       <p id="chests" style="color: blueviolet; background-color: bisque; font-family: 'Courier New', Courier, monospace; font-weight: 200;">Number of chests checked is zero.</p>
       <p id="score" style="color:forestgreen; background-color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 200;">Score is unknown.</p>
       <p id="help" style="color:gold; background-color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 200;">Help report</p>
+      <br>
+      <button class="btn btn-primary" onclick="bonusGame()">New Game</button>
 
       <div class="container">
         <div class="image-row d-flex justify-content-center">
@@ -123,6 +125,21 @@
         }
 
       }
+
+      function bonusGame(){
+      treasureLocation=Math.floor(Math.random() * (24 - 0)) + 0;
+      chestCount=0;
+      score=0;
+      document.getElementById("chests").innerHTML="Number of chests checked is "+chestCount+".";
+      document.getElementById("score").innerHTML="Score is "+score+".";
+      if(treasureLocation==12){
+        treasureLocation=12+Math.floor(Math.random()*12)
+      }
+      for (var i = 0; i <= 24; i++) {
+        if(i != 12)
+        document.getElementById(ids[i]).src = "closedChest.jpg"
+      }
+    }
 
     </script>
 
